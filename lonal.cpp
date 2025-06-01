@@ -5,13 +5,14 @@ int main(){
   int t;
   cin >> t;
   while(t--){
-    int n;
-    cin >> n;
-    vector<int> nums(n);
+    int a1, a2, a3, a4;
+    cin >> a1 >> a2 >> a3 >> a4;
 
-    for(int i=0;i<n;++i){
-      cin >> nums[i];
-    }
+    set <int> st;
+    st.insert(a1 + a2);
+    st.insert(a3 - a2);
+    st.insert(a4 - a3);
+    cout << 4 - st.size() << endl;
   }
   return 0;
 }
