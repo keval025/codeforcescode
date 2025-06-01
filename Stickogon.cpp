@@ -29,7 +29,7 @@ int main()
         cnt += it.second / 3;
       }
     }
-    cout << cnt << endl;
+    cout << cnt << endl;git s
   }
   return 0;
 }
